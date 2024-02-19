@@ -2,6 +2,7 @@ version: '1'
 
 services:
   stockview:
+    container_name: stockview
     build: .
     command: python manage.py runserver
     volumes:
