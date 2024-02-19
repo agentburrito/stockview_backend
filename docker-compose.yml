@@ -1,0 +1,10 @@
+version: '1'
+
+services:
+  stockview:
+    build: .
+    command: python manage.py runserver
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
